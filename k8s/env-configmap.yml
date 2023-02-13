@@ -1,0 +1,13 @@
+# Use config map for not-secret configuration data
+
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: env-configmap
+  namespace: commonservices-app
+data:
+  POSTGRES_HOST: devdb.cz2vwd1erxct.ap-southeast-1.rds.amazonaws.com
+  POSTGRES_PORT: "5432"
+  DB_NAME: devdb
+  KAFKA_BOOSTRAP_SERVER_HOST: b-2.msktutorialcluste.ckwi0y.c5.kafka.ap-southeast-1.amazonaws.com
+  KAFKA_BOOSTRAP_SERVER_PORT: "9098"

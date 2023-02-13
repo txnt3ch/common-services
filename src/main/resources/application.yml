@@ -1,0 +1,22 @@
+app:
+  version: ${APP_VERSION:0.0.4}
+
+
+kafka:
+  bootstrap-servers: ${KAFKA_BOOSTRAP_SERVER_HOST:localhost}:${KAFKA_BOOTSTRAP_SERVER_PORT:9092}
+  producer:
+  consumer:
+    group-id: mygroup
+    auto-offset-reset: earliest
+
+redis:
+  host: localhost
+  port: 6379
+
+elasticsearch:
+  host: localhost
+  port: 9200
+
+springdoc:
+  swagger-ui:
+    path: /apidocs
